@@ -10,15 +10,6 @@ public class CharacterStatus : MonoBehaviour
 
     private void Start()
     {
-        //Si esta bloqueado se muestra el boton para comprar personaje
-        if (isLocked)
-        {
-            botonComprar.SetActive(true);
-        }
-        //Si no el boton se oculta
-        else
-        {
-            botonComprar.SetActive(false);
-        }
+        botonComprar.SetActive(isLocked);
     }
 }

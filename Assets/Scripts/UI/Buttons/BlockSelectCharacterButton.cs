@@ -6,27 +6,15 @@ public class BlockSelectCharacterButton : MonoBehaviour
 {
     //Componente SwipeMenu del contenedor de personajes
     public SwipeMenu contenedorDePersonajes;
+    private Button selectButton;
 
-    private void Update()
+    private void Start()
     {
-        //Se llama a la funcion
-        BlockButton();
+        selectButton = GetComponent<Button>();
     }
 
-    private void BlockButton()
+    public void BlockButton()
     {
-        //Si no se ha asignado nada a currentlySelection sale de la funcion
-        if (contenedorDePersonajes.currentlySelection == null) return;
-
-        //Si el personaje que se quiere seleccionar esta bloqueado se deshabilita el boton
-        if (contenedorDePersonajes.currentlySelection.GetComponent<CharacterStatus>().isLocked)
-        {
-            gameObject.GetComponent<Button>().interactable = false;
-        }
-        //Si no se habilita
-        else
-        {
-            gameObject.GetComponent<Button>().interactable = true;
-        }
+        selectButton.interactable = !contenedorDePersonajes.currentlySelection.GetComponent<CharacterStatus>().isLocked;
     }
 }

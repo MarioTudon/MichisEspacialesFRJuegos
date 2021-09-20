@@ -28,6 +28,8 @@ public class ChangeSkinButtons : MonoBehaviour
         {
             characterSkin.skinNumber = 0;
         }
+
+        characterSkin.UpdateSkin();
     }
 
     //Esta funcion se coloca en el boton para cambiar a la skin anterior
@@ -44,5 +46,7 @@ public class ChangeSkinButtons : MonoBehaviour
         {
             characterSkin.skinNumber = characterSkin.skins.Length - 1;
         }
+
+        characterSkin.UpdateSkin();
     }
 }

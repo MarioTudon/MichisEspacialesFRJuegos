@@ -9,20 +9,21 @@ public class SwipeMenu : MonoBehaviour
     //Variable que configurara el la posicion del scroll
     private float scroll_pos = 0;
     //Array que guardara las posiciones de los objetos que contiene el scroll
-    //En estas posiciones se snapeara el scroll
+    //en estas posiciones se snapeara el scroll
     private float[] pos;
+    //Float que guardara la distancia entre cada objeto;
+    private float distance;
     //Variable bool que determina si se quiere obtener el objeto que esta seleccionado en el SwipeMenu
     public bool checkSelection;
     //Variable que guarda el GameObject que esta seleccionado en el scroll
     [HideInInspector] public GameObject currentlySelection;
 
-    void Update()
+    private void Start()
     {
-        //Se guardan todos los hijos que contiene el GameObject content en el array de pos
+        //Se guardan todos los hijos que contiene el GameObject Content en el array de pos
         pos = new float[transform.childCount];
-        //Se crea una variable llamada distance que sera la distancia que hay entre cada
-        //hijo de content
-        float distance = 1f / (pos.Length - 1f);
+        //distance se iguala a la distancia que existe entre cada hijo del scroll
+        distance = 1f / (pos.Length - 1f);
 
         //En este ciclo for se guardan las posiciones en el array pos
         //en cada lugar que le corresponde
@@ -30,7 +31,10 @@ public class SwipeMenu : MonoBehaviour
         {
             pos[i] = distance * i;
         }
+    }
 
+    void Update()
+    {
         //Mientras se este tocando la pantalla
         if (Input.GetMouseButton(0))
         {

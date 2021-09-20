@@ -5444,7 +5444,19 @@ MonoBehaviour:
   m_VerticalScrollbarSpacing: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 727296715}
+        m_TargetAssemblyTypeName: BlockSelectCharacterButton, Assembly-CSharp
+        m_MethodName: BlockButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1518131577
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7255,6 +7267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateName: {fileID: 479986425}
   selector: {fileID: 1651835160}
+  levelSelector: {fileID: 1651835161}
 --- !u!114 &1948021792
 MonoBehaviour:
   m_ObjectHideFlags: 0

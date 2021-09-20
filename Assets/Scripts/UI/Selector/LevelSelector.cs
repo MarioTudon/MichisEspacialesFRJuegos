@@ -28,45 +28,19 @@ public class LevelSelector : MonoBehaviour
         currentlyLevel = levelsList.transform.GetChild(0).gameObject;
         //Se anima el nivel seleccionado aumentando su escala a 1.5 con un loop ping pong
         currentlyLevel.transform.LeanScale(Vector3.one * 1.5f, 0.5f).setLoopPingPong();
-    }
-    private void Update()
-    {
-        //Se llama a las siguiente funciones
-        SetPreviousLevel();
-        SetNextLevel();
+        //Funcion que asigna los niveles anterior y siguiente
+        SetPreviousAndNextLevels();
     }
 
     //Funcion que define la variable "previousLevel"
-    private void SetPreviousLevel()
+    public void SetPreviousAndNextLevels()
     {
-        //Si antes del GameObject "currentlyLevel" existe otro GameObject se ejecuta esta parte
-        if (currentlyLevel.transform.GetSiblingIndex() - 1 > -1)
-        {
-            //La variable "previousLevel" se iguala al GameObject anterior en la lista de niveles, tomando
-            //como referencia el "currentlyLevel"
-            previousLevel = levelsList.transform.GetChild(currentlyLevel.transform.GetSiblingIndex() - 1).gameObject;
-        }
-        //Si no "previousLevel" se define como null
-        else
-        {
-            previousLevel = null;
-        }
-    }
+        //Esta linea define el valor del nivel anterior dependiendo de lo que haya en la lista
+        previousLevel = currentlyLevel.transform.GetSiblingIndex() - 1 > -1 ?
+        levelsList.transform.GetChild(currentlyLevel.transform.GetSiblingIndex() - 1).gameObject : null;
 
-    //Funcion que define la variable "nextLevel"
-    private void SetNextLevel()
-    {
-        //Si desoues del GameObject "currentlyLevel" existe otro GameObject se ejecuta esta parte
-        if (currentlyLevel.transform.GetSiblingIndex() + 1 < levelsList.transform.childCount)
-        {
-            //La variable "nextLevel" se iguala al GameObject siguiente en la lista de los niveles, tomando
-            //como referencia el "currentlyLevel"
-            nextLevel = levelsList.transform.GetChild(currentlyLevel.transform.GetSiblingIndex() + 1).gameObject;
-        }
-        //Si no "nextLevel" se define como null
-        else
-        {
-            nextLevel = null;
-        }
+        //Esta linea define el valor del nivel siguiente dependiendo de lo que haya en la lista
+        nextLevel = currentlyLevel.transform.GetSiblingIndex() + 1 < levelsList.transform.childCount ?
+        levelsList.transform.GetChild(currentlyLevel.transform.GetSiblingIndex() + 1).gameObject : null;
     }
 }

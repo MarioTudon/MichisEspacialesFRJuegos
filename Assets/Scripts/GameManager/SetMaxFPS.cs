@@ -6,6 +6,6 @@ public class SetMaxFPS : MonoBehaviour
 {
     void Awake()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = Screen.currentResolution.refreshRate;
     }
 }
