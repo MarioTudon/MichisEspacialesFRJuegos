@@ -17,6 +17,7 @@ public class LevelSelector : MonoBehaviour
     [HideInInspector] public GameObject currentlyLevel;
     //Nivel siguiente al nivel seleccionado
     [HideInInspector] public GameObject nextLevel;
+    private Canvas currentlyLevelCanvas;
 
     void Start()
     {
@@ -26,8 +27,10 @@ public class LevelSelector : MonoBehaviour
         lastLevel = levelsList.transform.GetChild(levelsList.transform.childCount - 1).gameObject;
         //La variable "currentlyLevel" se iguala al hijo donde el selector se encuentra posicionado
         currentlyLevel = levelsList.transform.GetChild(0).gameObject;
+        currentlyLevelCanvas = currentlyLevel.GetComponent<Canvas>();
+        currentlyLevelCanvas.sortingOrder = 2;
         //Se anima el nivel seleccionado aumentando su escala a 1.5 con un loop ping pong
-        currentlyLevel.transform.LeanScale(Vector3.one * 1.5f, 0.5f).setLoopPingPong();
+        currentlyLevel.transform.LeanScale(Vector3.one * 1.1f, 0.5f).setLoopPingPong();
         //Funcion que asigna los niveles anterior y siguiente
         SetPreviousAndNextLevels();
     }
