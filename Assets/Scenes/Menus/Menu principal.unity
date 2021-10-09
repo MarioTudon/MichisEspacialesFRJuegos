@@ -1321,7 +1321,7 @@ RectTransform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 923489049}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -2860,6 +2860,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855636100}
   m_CullTransparentMesh: 1
+--- !u!1 &898888186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 898888187}
+  m_Layer: 5
+  m_Name: Contenedor de naves
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &898888187
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898888186}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 923489049}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &899505920
 GameObject:
   m_ObjectHideFlags: 0
@@ -3024,6 +3059,7 @@ RectTransform:
   - {fileID: 472457935}
   - {fileID: 855636101}
   - {fileID: 1348920634}
+  - {fileID: 898888187}
   - {fileID: 368299827}
   m_Father: {fileID: 1296038307}
   m_RootOrder: 1
@@ -6424,6 +6460,7 @@ GameObject:
   - component: {fileID: 1697255841}
   - component: {fileID: 1697255837}
   - component: {fileID: 1697255843}
+  - component: {fileID: 1697255842}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -6510,6 +6547,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   languageText: {fileID: 1921637509}
+--- !u!114 &1697255842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697255836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c564a69a1988d874087192da3aee9ad1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spacheship: {fileID: 3076887469531834666, guid: dd93e99e6a2e11146beee0ca4bb0a868, type: 3}
+  spaceshipSprite:
+  - {fileID: 21300000, guid: d7e1d8fa1d7ba7b4aae8c635f1afe66b, type: 3}
+  - {fileID: 21300000, guid: f2bb7cce02f8dc24dac650e1a4655520, type: 3}
+  - {fileID: 21300000, guid: dd6d0ad27dd5b7c46870669ca3bdaf42, type: 3}
+  spaceshipsContainer: {fileID: 898888187}
 --- !u!114 &1697255843
 MonoBehaviour:
   m_ObjectHideFlags: 0
