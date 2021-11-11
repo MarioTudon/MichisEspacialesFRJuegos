@@ -15,6 +15,8 @@ public class AppearSpaceships : MonoBehaviour
         newPos.x = Screen.currentResolution.width * (Random.Range(0, 2) * 2 - 1);
         spacheship.transform.position = newPos;
         spacheship.GetComponent<Image>().sprite = spaceshipSprite[Random.Range(0, 2)];
+        float newScale = Random.Range(0.5f, 1.6f);
+        spacheship.transform.localScale = new Vector3(newScale, newScale, newScale);
         StartCoroutine(AppearSpacheshipCoroutine());
     }
 
@@ -22,12 +24,14 @@ public class AppearSpaceships : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(12);
+            yield return new WaitForSeconds(8);
             Instantiate(spacheship, spaceshipsContainer);
             Vector2 newPos = spacheship.transform.position;
             newPos.x = Screen.currentResolution.width * (Random.Range(0, 2) * 2 - 1);
             spacheship.transform.position = newPos;
             spacheship.GetComponent<Image>().sprite = spaceshipSprite[Random.Range(0, 2)];
+            float newScale = Random.Range(0.5f, 1.6f);
+            spacheship.transform.localScale = new Vector3(newScale, newScale, newScale);
         }
     }
 }
