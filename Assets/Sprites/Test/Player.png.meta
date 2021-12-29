@@ -29,6 +29,27 @@ TextureImporter:
   - first:
       213: -6276218431639448483
     second: Jump 9
+  - first:
+      213: -3304032535476703026
+    second: Crouch 1
+  - first:
+      213: 4862548748722168056
+    second: Crouch 2
+  - first:
+      213: -6975675795426512198
+    second: Shot 1
+  - first:
+      213: 5400212144664640972
+    second: Shot 2
+  - first:
+      213: -5199974216777414443
+    second: Shot 3
+  - first:
+      213: -346802463868192068
+    second: Shot 4
+  - first:
+      213: 1069198137256033343
+    second: Shot 5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -242,7 +263,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 139
-        y: 558
+        y: 559
         width: 28
         height: 41
       alignment: 9
@@ -414,7 +435,7 @@ TextureImporter:
         width: 29
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -435,7 +456,7 @@ TextureImporter:
         width: 29
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -456,7 +477,7 @@ TextureImporter:
         width: 29
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -477,7 +498,7 @@ TextureImporter:
         width: 29
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -498,7 +519,7 @@ TextureImporter:
         width: 29
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -519,7 +540,7 @@ TextureImporter:
         width: 29
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -540,7 +561,7 @@ TextureImporter:
         width: 29
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -561,7 +582,7 @@ TextureImporter:
         width: 29
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -582,7 +603,7 @@ TextureImporter:
         width: 29
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -590,6 +611,132 @@ TextureImporter:
       bones: []
       spriteID: d541f59d69466e8a0800000000000000
       internalID: -6276218431639448483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crouch 1
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 60
+        width: 29
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5689655, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0f39c1ae7b522d0800000000000000
+      internalID: -3304032535476703026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crouch 2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 60
+        width: 33
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0ea96f25e3b7340800000000000000
+      internalID: 4862548748722168056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot 1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 504
+        width: 50
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5135135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2ff41a2db613f90800000000000000
+      internalID: -6975675795426512198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot 2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 504
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.29411766, y: 0.5135135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd7c72855861fa40800000000000000
+      internalID: 5400212144664640972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot 3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 504
+        width: 36
+        height: 37
+      alignment: 9
+      pivot: {x: 0.41666666, y: 0.5135135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8cacf100bf5d7b0800000000000000
+      internalID: -5199974216777414443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shot 4
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 504
+        width: 36
+        height: 39
+      alignment: 9
+      pivot: {x: 0.41666666, y: 0.4871795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbaf7ed1ff8ef2bf0800000000000000
+      internalID: -346802463868192068
       vertices: []
       indices: 
       edges: []
