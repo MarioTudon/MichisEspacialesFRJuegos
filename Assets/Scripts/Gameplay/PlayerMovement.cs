@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         originalXScale = transform.localScale.x;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Crouch();
         HorizontalMovement();

@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour
         transform.localScale = newScale;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         rB2D.velocity = bulletVelocity;
     }

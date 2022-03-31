@@ -14,7 +14,7 @@ public class ParallaxEffect : MonoBehaviour
         previousCameraPos = cameraTransform.position;
     }
 
-    void Update()
+    void LateUpdate()
     {
         float deltaX = (cameraTransform.position.x - previousCameraPos.x) * parallaxMultiplierX;
         float deltaY = (cameraTransform.position.y - previousCameraPos.y) * parallaxMultiplierY;
